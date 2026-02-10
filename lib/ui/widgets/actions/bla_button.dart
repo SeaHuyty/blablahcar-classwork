@@ -19,12 +19,12 @@ class BlaButton extends StatelessWidget {
     return GestureDetector(
       onTap: () => onPressed,
       child: Container(
-        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+        padding: EdgeInsets.symmetric(vertical: 12, horizontal: 10),
         width: double.infinity,
         decoration: BoxDecoration(
           color: isPrimary ? Colors.blue : Colors.white,
           border: isPrimary ? null : Border.all(color: const Color.fromARGB(255, 196, 196, 196)),
-          borderRadius: BorderRadius.circular(30),
+          borderRadius: BorderRadius.only(bottomLeft: Radius.circular(30), bottomRight: Radius.circular(30)),
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
